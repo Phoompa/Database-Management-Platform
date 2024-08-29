@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 62px;
+    font-family: helvetica, arial, sans-serif;
+    margin-bottom: 10;
+    padding: 10px 0 0 30px;
+}
+.listContainer{
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    /*transform: translate(-50%, -50%);*/
+}
+.btnList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.btnList li{
+    float: left;
+}
+.btnList li a{
+    display: block;
+    padding: 20px 130px;
+}
+.dbBtn{
+    background:#343434;
+    color: white;
+    width: 100%;
+    border: 0;
+    font-size: 18px;
+    padding: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dbBtn:hover{
+    background: #565656;
+    transform: scale(1.1);
+    box-shadow: 7px 10px 30px black;
+    transition: 0.5s;
+}
+
+.dbBtn img{
+    width: 100px;
+    height: 100px;
+    filter: invert();
+}

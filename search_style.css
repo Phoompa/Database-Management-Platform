@@ -1,0 +1,156 @@
+.form-popup {
+  display: none;
+  position: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9;
+  color:#121212;
+  border-radius: 8px;
+}
+
+.add-fields-container{
+  color:#333;
+}
+
+.btn-container{
+  vertical-align: bottom;
+  display:table-cell;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #ddd;
+  margin: 0;
+  padding-left: 20px;
+}
+
+form {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header-labels{
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.input-labels{
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  width:180px;
+  clear:right;
+  text-align:left;
+  padding-left:10px;
+}
+
+.search-input, .input-labels{
+  float:left;
+}
+
+select{ 
+  background-color: #1f1f1f;
+  color: #fff;
+  border: white;
+  outline:#fff;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+input[type="text"]{
+  background-color: #1f1f1f;
+  color: #fff;
+  border: white;
+  outline:#fff;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+input[type="submit"] {
+  background-color: #1f1f1f;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #ffffff;
+  border: 2px solid #3f3e3e;
+  outline: 4px #fff;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 200px;
+  display: inline-block;
+}
+
+#search-fields{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.box {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+#remove-btn{
+  background-color: #7e0202;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid #ce0101;
+  color: #ffffff;
+  outline: 4px #fff;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 150px;
+}
+
+#add-btn,
+#add-field-btn,
+#back-btn{
+  background-color: #027402;
+  cursor: pointer;
+  margin-top: 20px;
+  outline: 4px #fff;
+  color: #ffffff;
+  border: 2px solid #02be02;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 150px;
+}

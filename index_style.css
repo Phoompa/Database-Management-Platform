@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: #343434;
+    border-radius: 10px;
+    box-shadow: 7px 10px 30px black;
+}
+.main h1{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding: 10px 0 0 30px;
+}
+.main h2{
+    color:gray;
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 100;
+    margin-top: 0;
+    padding: 0 0 0 30px;
+}
+.main form{
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    margin: 20px 0 5px;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 2px;
+    height: 40px;
+    background-color: ivory;
+    border: none;
+    outline: none;
+}
+.txt_field input:focus{
+    transform: scale(1.1);
+}
+
+input[type = "submit"]{
+    width: 100%;
+    height: 40px;
+    margin: 10px 2px 20px;
+    border: none;
+    background-color:skyblue;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+input[type = "submit"]:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.main p {
+    color: red;
+    font-size: 18px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 100;
+    padding: 0 0 0 30px;
+}

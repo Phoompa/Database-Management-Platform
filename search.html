@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Function</title>
+    <link rel="stylesheet" href="search_style.css">
+</head>
+<body onload="checkMemory()">
+    <header>
+        <h1>Search</h1>
+    </header>
+
+    <div class="form-popup" id="addForm">
+      <form>
+        <div class="add-fields-container">
+            <label for="addFields" class="header-labels">Add Search Field:</label>
+            <select name="add-fields" id="addFields">
+            <!-- filled in later -->
+            </select>
+            <input type="button" onclick="addSearchField()" value="Add Field" id="add-field-btn">
+        </div>
+      </form>
+    </div>
+
+    <form action="search_results.php" method="post" class="form-horizontal">
+        <div style="position: fixed; top: 70px; left: 10px;">
+            <label for="table" class="header-labels">Select Table:</label>
+            <select name="table" id="table" onchange="changeTable()">
+                <option value="supplier">Supplier</option>
+                <option value="product">Product</option>
+            </select>
+        </div>
+
+        <div class="box">
+          <label for="search-fields">Search Table WHERE:</label>
+          <div id="search-fields"></div>
+          <div class="btn-container">
+            <input type="button" onclick="addBtn()" value="Add" id="add-btn">   
+            <input type="button" onclick="removeSearchField()" value="Remove" id="remove-btn"> 
+          </div>
+          <div class="search-btn-container"></div>
+            <input type="submit" onclick="commitToMem()" id="search-btn" value="Search">
+          </div>
+        </div>
+
+    </form>
+</body>
+<script src="search.js" defer></script>
+</html>
